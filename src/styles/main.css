@@ -1990,3 +1990,72 @@ table {
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
+    #participa {
+      background-color: #f4f4f4;
+      padding: 3em 1em;
+      text-align: center;
+      border-top: 2px solid #C49A6C;
+    }
+    
+    #participa .inner {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    #participa h2 {
+      font-size: 2em;
+      color: #333;
+    }
+    
+    #participa p {
+      font-size: 1.25em;
+      color: #555;
+      margin-bottom: 1.5em;
+    }
+    
+    #participa .button.primary {
+      display: inline-block;
+      padding: 0.75em 1.5em;
+      background-color: #C49A6C;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+      border-radius: 5px;
+      transition: background-color 0.3s ease;
+    }
+    
+    #participa .button.primary:hover {
+      background-color: #a67c52;
+    }
+    
+    @media screen and (max-width: 768px) {
+      #participa h2 {
+        font-size: 1.75em;
+      }
+    
+      #participa p {
+        font-size: 1.1em;
+      }
+    
+      #participa .button.primary {
+        font-size: 1.1em;
+        padding: 0.65em 1.3em;
+      }
+    }
+    
+    @media screen and (max-width: 480px) {
+      #participa h2 {
+        font-size: 1.5em;
+      }
+    
+      #participa p {
+        font-size: 1em;
+      }
+    
+      #participa .button.primary {
+        font-size: 1em;
+        padding: 0.5em 1em;
+      }
+    }
+    
