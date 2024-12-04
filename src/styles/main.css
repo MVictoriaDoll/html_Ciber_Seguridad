@@ -2059,3 +2059,56 @@ table {
       }
     }
     
+    #banner {
+      display: flex;
+      align-items: center; 
+      gap: 10rem; 
+      padding-top: 1rem;
+     
+    }
+    .logo-container {
+      display: flex;
+      height: auto;
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+      flex: 1; 
+      gap: 10rem;
+      margin-top: 0;
+    }
+    
+
+    .logo-canning {
+      max-width: 350px;
+    }
+
+    .logo-mg {
+      max-width: 450px;
+    }
+
+    hr {
+      margin-bottom: 0.5rem; /* Reduce el espacio entre la línea y los logos */
+    }
+
+    .Canning {
+      margin-bottom: 30px;
+    }
+
+    .MG {
+      margin-top: 20px;
+    }
+    @media screen and (max-width: 768px) {
+      .logo-container img {
+        display: flex;
+        max-width: 250px; 
+        align-items: center;
+      }
+    }
+    
+   
+    
+    
+    
+    
+    
+    
