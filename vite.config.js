@@ -27,7 +27,6 @@ const htmlFilesList = Object.fromEntries(
 
 const inputFilesList = {
   ...htmlFilesList,
-  'main': 'src/js/main.js',
 }
 
 export default defineConfig({
@@ -43,14 +42,7 @@ export default defineConfig({
       input: inputFilesList,
       output: {
         sourcemap: true,
-        entryFileNames: ({name}) => {
-          if( name === 'main' ) {
-            return 'js/main.js';
-          }
-          // default value
-          // ref: https://rollupjs.org/configuration-options/#output-entryfilenames
-          return "[name].js";
-        },
+        entryFileNames: '[name].js'
       },
     },
   },
@@ -64,9 +56,6 @@ export default defineConfig({
     injectHTML(),
     ViteImageOptimizer({
       /* pass your config */
-    }),
-    concat({
-      input: ['main.js']
     }),
   ],
 });
